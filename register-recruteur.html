@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SystemXëy | Inscription Recruteur</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="https://via.placeholder.com/40x40" alt="Logo SystemXëy">
+        <h1>SystemXëy</h1>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="profils.html">Profils</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="auth-section">
+    <div class="container">
+      <div class="auth-container">
+        <div class="auth-content">
+          <div class="auth-header">
+            <h2>Créer un compte recruteur</h2>
+            <p>Rejoignez notre plateforme pour trouver les meilleurs talents parmi nos étudiants</p>
+          </div>
+
+          <div class="auth-tabs">
+            <button class="auth-tab active">Recruteur</button>
+            <button class="auth-tab" onclick="window.location.href='register-etudiant.html'">Étudiant</button>
+          </div>
+
+          <form class="auth-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required>
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email professionnel</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="entreprise">Nom de l'entreprise</label>
+              <input type="text" id="entreprise" name="entreprise" required>
+            </div>
+
+            <div class="form-group">
+              <label for="poste">Poste occupé</label>
+              <input type="text" id="poste" name="poste" required>
+            </div>
+
+            <div class="form-group">
+              <label for="secteur">Secteur d'activité</label>
+              <select id="secteur" name="secteur" required>
+                <option value="">Sélectionnez un secteur</option>
+                <option value="technologie">Technologie et informatique</option>
+                <option value="finance">Finance et banque</option>
+                <option value="sante">Santé</option>
+                <option value="education">Éducation</option>
+                <option value="commerce">Commerce et distribution</option>
+                <option value="industrie">Industrie et production</option>
+                <option value="communication">Communication et médias</option>
+                <option value="transport">Transport et logistique</option>
+                <option value="construction">Construction et immobilier</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <div class="password-input">
+                  <input type="password" id="password" name="password" required>
+                  <i class="fas fa-eye-slash toggle-password"></i>
+                </div>
+                <small class="password-hint">8 caractères minimum, une majuscule, un chiffre et un caractère spécial</small>
+              </div>
+              <div class="form-group">
+                <label for="password-confirm">Confirmez le mot de passe</label>
+                <div class="password-input">
+                  <input type="password" id="password-confirm" name="password-confirm" required>
+                  <i class="fas fa-eye-slash toggle-password"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">J'accepte les <a href="#">conditions d'utilisation</a> et la <a href="#">politique de confidentialité</a></label>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Je souhaite recevoir des alertes par email sur les nouveaux profils correspondant à mes critères</label>
+            </div>
+
+            <button type="submit" class="btn-primary btn-full">
+              <i class="fas fa-user-plus"></i> Créer mon compte
+            </button>
+          </form>
+
+          <div class="auth-footer">
+            <p>Déjà inscrit ? <a href="login.html">Connectez-vous</a></p>
+          </div>
+        </div>
+
+        <div class="auth-image">
+          <img src="https://source.unsplash.com/random/600x800/?business,recruiting" alt="Recrutement de talents">
+          <div class="auth-image-overlay">
+            <h3>Trouvez vos futurs talents</h3>
+            <ul class="benefit-list">
+              <li><i class="fas fa-check"></i> Accès à plus de 500 profils d'étudiants qualifiés</li>
+              <li><i class="fas fa-check"></i> Recherche avancée par compétences et disponibilité</li>
+              <li><i class="fas fa-check"></i> Contact direct avec les candidats</li>
+              <li><i class="fas fa-check"></i> Système de favoris pour sauvegarder vos profils préférés</li>
+              <li><i class="fas fa-check"></i> Alertes personnalisées sur les nouveaux profils</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>SystemXëy</h3>
+          <p>Plateforme de mise en relation entre étudiants et entreprises</p>
+        </div>
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="profils.html">Profils</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Restez Connecté</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SystemXëy - Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Fonction pour afficher/cacher le mot de passe
+    document.addEventListener('DOMContentLoaded', function() {
+      const togglePasswordButtons = document.querySelectorAll('.toggle-password');
+      
+      togglePasswordButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const passwordInput = this.previousElementSibling;
+          const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+          passwordInput.setAttribute('type', type);
+          
+          // Change l'icône
+          this.classList.toggle('fa-eye');
+          this.classList.toggle('fa-eye-slash');
+        });
+      });
+      
+      // Menu mobile
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      
+      menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        
+        // Change icon
+        const icon = this.querySelector('i');
+        if (icon.classList.contains('fa-bars')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-times');
+        } else {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
+      });
+    });
+  </script>
+</body>
+</html> 

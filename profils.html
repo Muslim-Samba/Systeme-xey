@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SystemXëy | Profils d'étudiants</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/sxeylogo.jpg" alt="Logo SystemXëy">
+        <h1>SystemXëy</h1>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="profils.html" class="active">Profils</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn-login">Connexion</a>
+        <a href="register-recruteur.html" class="btn-signup">Inscription</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Talents Disponibles</h1>
+      <p>Découvrez les profils de nos étudiants en fin de cycle, prêts à intégrer votre entreprise</p>
+    </div>
+    <div class="wave-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section class="profil-section">
+    <div class="container">
+      <div class="filter-container">
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Rechercher par nom ou compétence...">
+          <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="filters">
+          <div class="filter-group">
+            <label>Domaine d'études</label>
+            <select id="domaine-filter">
+              <option value="">Tous les domaines</option>
+              <option value="informatique">Informatique</option>
+              <option value="marketing">Marketing</option>
+              <option value="finance">Finance</option>
+              <option value="design">Design</option>
+              <option value="ingenerie">Ingénierie</option>
+              <option value="communication">Communication</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Niveau d'études</label>
+            <select id="niveau-filter">
+              <option value="">Tous les niveaux</option>
+              <option value="licence">Licence</option>
+              <option value="master">Master</option>
+              <option value="doctorat">Doctorat</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Disponibilité</label>
+            <select id="disponibilite-filter">
+              <option value="">Toutes</option>
+              <option value="immediat">Immédiate</option>
+              <option value="1mois">D'ici 1 mois</option>
+              <option value="3mois">D'ici 3 mois</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+    <div class="profil-grid">
+        <!-- Profil 1 -->
+        <div class="profil-card" data-domaine="informatique" data-niveau="master" data-disponibilite="immediat">
+          <div class="profil-header">
+            <span class="disponibilite disponible">Disponible immédiatement</span>
+            <div class="favorite"><i class="far fa-bookmark"></i></div>
+          </div>
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Photo d'Aminata Diallo">
+          <div class="profil-info">
+        <h3>Aminata Diallo</h3>
+            <p class="titre">Master en Marketing Digital</p>
+            <div class="tags">
+              <span>Community Management</span>
+              <span>SEO</span>
+              <span>Réseaux Sociaux</span>
+            </div>
+            <p class="description">Spécialisée en stratégie de contenu et analyse de performance sur les réseaux sociaux. Expérience en gestion de communauté pour des startups innovantes.</p>
+            <div class="profil-actions">
+              <a href="profil-detail-aminata.html" class="btn-profil"><i class="fas fa-eye"></i> Voir le profil complet</a>
+              <a href="#" class="btn-contact"><i class="fas fa-envelope"></i> Contacter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profil 2 -->
+        <div class="profil-card" data-domaine="informatique" data-niveau="licence" data-disponibilite="1mois">
+          <div class="profil-header">
+            <span class="disponibilite bientot">Disponible dans 1 mois</span>
+            <div class="favorite"><i class="far fa-bookmark"></i></div>
+          </div>
+          <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Photo de Moussa Ndiaye">
+          <div class="profil-info">
+          <h3>Moussa Ndiaye</h3>
+            <p class="titre">Licence en Développement Web</p>
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+            </div>
+            <p class="description">Développeur front-end passionné par la création d'interfaces utilisateur intuitives et réactives. Stage effectué chez une agence web reconnue.</p>
+            <div class="profil-actions">
+              <a href="profil-detail-moussa.html" class="btn-profil"><i class="fas fa-eye"></i> Voir le profil complet</a>
+              <a href="#" class="btn-contact"><i class="fas fa-envelope"></i> Contacter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profil 3 -->
+        <div class="profil-card" data-domaine="finance" data-niveau="master" data-disponibilite="immediat">
+          <div class="profil-header">
+            <span class="disponibilite disponible">Disponible immédiatement</span>
+            <div class="favorite"><i class="far fa-bookmark"></i></div>
+          </div>
+          <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Photo de Fatou Sy">
+          <div class="profil-info">
+            <h3>Fatou Sy</h3>
+            <p class="titre">Master en Finance d'Entreprise</p>
+            <div class="tags">
+              <span>Analyse financière</span>
+              <span>Audit</span>
+              <span>Excel avancé</span>
+            </div>
+            <p class="description">Spécialisée dans l'analyse financière et la gestion de portefeuilles. Excellente maîtrise des outils d'analyse de données et de reporting.</p>
+            <div class="profil-actions">
+              <a href="profil-detail-fatou.html" class="btn-profil"><i class="fas fa-eye"></i> Voir le profil complet</a>
+              <a href="#" class="btn-contact"><i class="fas fa-envelope"></i> Contacter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profil 4 -->
+        <div class="profil-card" data-domaine="design" data-niveau="licence" data-disponibilite="3mois">
+          <div class="profil-header">
+            <span class="disponibilite futur">Disponible dans 3 mois</span>
+            <div class="favorite"><i class="far fa-bookmark"></i></div>
+          </div>
+          <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Photo de Ibrahim Camara">
+          <div class="profil-info">
+            <h3>Ibrahim Camara</h3>
+            <p class="titre">Licence en Design UX/UI</p>
+            <div class="tags">
+              <span>Figma</span>
+              <span>Adobe XD</span>
+              <span>User Research</span>
+            </div>
+            <p class="description">Designer créatif focalisé sur l'expérience utilisateur. Capable de concevoir des interfaces intuitives et esthétiques basées sur les besoins réels des utilisateurs.</p>
+            <div class="profil-actions">
+              <a href="profil-detail-ibrahim.html" class="btn-profil"><i class="fas fa-eye"></i> Voir le profil complet</a>
+              <a href="#" class="btn-contact"><i class="fas fa-envelope"></i> Contacter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profil 5 -->
+        <div class="profil-card" data-domaine="ingenerie" data-niveau="master" data-disponibilite="1mois">
+          <div class="profil-header">
+            <span class="disponibilite bientot">Disponible dans 1 mois</span>
+            <div class="favorite"><i class="far fa-bookmark"></i></div>
+          </div>
+          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Photo de Aïssatou Bâ">
+          <div class="profil-info">
+            <h3>Aïssatou Bâ</h3>
+            <p class="titre">Master en Génie Informatique</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Data Science</span>
+            </div>
+            <p class="description">Ingénieure spécialisée en intelligence artificielle et traitement automatique des données. Expérience dans le développement d'algorithmes prédictifs.</p>
+            <div class="profil-actions">
+              <a href="profil-detail-aissatou.html" class="btn-profil"><i class="fas fa-eye"></i> Voir le profil complet</a>
+              <a href="#" class="btn-contact"><i class="fas fa-envelope"></i> Contacter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profil 6 -->
+        <div class="profil-card" data-domaine="communication" data-niveau="licence" data-disponibilite="immediat">
+          <div class="profil-header">
+            <span class="disponibilite disponible">Disponible immédiatement</span>
+            <div class="favorite"><i class="far fa-bookmark"></i></div>
+          </div>
+          <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Photo de Ousmane Diop">
+          <div class="profil-info">
+            <h3>Ousmane Diop</h3>
+            <p class="titre">Licence en Communication Digitale</p>
+            <div class="tags">
+              <span>Rédaction Web</span>
+              <span>Stratégie de contenu</span>
+              <span>Copywriting</span>
+            </div>
+            <p class="description">Créateur de contenu digital avec une excellente maîtrise des techniques de storytelling et d'optimisation SEO. Expérience en création de campagnes engageantes.</p>
+            <div class="profil-actions">
+              <a href="profil-detail-ousmane.html" class="btn-profil"><i class="fas fa-eye"></i> Voir le profil complet</a>
+              <a href="#" class="btn-contact"><i class="fas fa-envelope"></i> Contacter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <a href="#" class="page-link active">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <span class="page-dots">...</span>
+        <a href="#" class="page-link">10</a>
+        <a href="#" class="page-link next"><i class="fas fa-chevron-right"></i></a>
+      </div>
+
+      <div class="recruteur-cta">
+        <h3>Vous êtes recruteur ?</h3>
+        <p>Créez votre compte et accédez à l'ensemble de nos profils d'étudiants. Contactez directement les candidats qui correspondent à vos besoins.</p>
+        <a href="#" class="btn-primary"><i class="fas fa-user-plus"></i> Créer un compte recruteur</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>SystemXëy</h3>
+          <p>Plateforme de mise en relation entre étudiants et entreprises</p>
+        </div>
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="profils.html">Profils</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Restez Connecté</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+      <p>&copy; 2025 SystemXëy - Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Menu mobile toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('active');
+          
+          // Change icon
+          const icon = this.querySelector('i');
+          if (icon.classList.contains('fa-bars')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+          } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+          }
+        });
+      }
+
+      // Filtrage des profils
+      const domainFilter = document.getElementById('domaine-filter');
+      const niveauFilter = document.getElementById('niveau-filter');
+      const dispoFilter = document.getElementById('disponibilite-filter');
+      const searchInput = document.getElementById('search-input');
+      const searchBtn = document.getElementById('search-btn');
+      const profilCards = document.querySelectorAll('.profil-card');
+
+      function filterProfiles() {
+        const domainValue = domainFilter.value;
+        const niveauValue = niveauFilter.value;
+        const dispoValue = dispoFilter.value;
+        const searchValue = searchInput.value.toLowerCase();
+
+        profilCards.forEach(card => {
+          const domain = card.getAttribute('data-domaine');
+          const niveau = card.getAttribute('data-niveau');
+          const dispo = card.getAttribute('data-disponibilite');
+          const content = card.textContent.toLowerCase();
+
+          const domainMatch = !domainValue || domain === domainValue;
+          const niveauMatch = !niveauValue || niveau === niveauValue;
+          const dispoMatch = !dispoValue || dispo === dispoValue;
+          const searchMatch = !searchValue || content.includes(searchValue);
+
+          if (domainMatch && niveauMatch && dispoMatch && searchMatch) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      // Ajouter event listeners pour les filtres
+      domainFilter.addEventListener('change', filterProfiles);
+      niveauFilter.addEventListener('change', filterProfiles);
+      dispoFilter.addEventListener('change', filterProfiles);
+      searchBtn.addEventListener('click', filterProfiles);
+      searchInput.addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') {
+          filterProfiles();
+        }
+      });
+
+      // Favoris
+      const favoriteIcons = document.querySelectorAll('.favorite i');
+      favoriteIcons.forEach(icon => {
+        icon.addEventListener('click', function() {
+          this.classList.toggle('far');
+          this.classList.toggle('fas');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

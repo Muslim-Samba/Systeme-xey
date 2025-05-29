@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SystemXëy | Mise en relation étudiants-recruteurs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/sxeylogo.jpg" alt="Logo SystemXëy">
+        <h1>SystemXëy</h1>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <a href="#" class="active">Accueil</a>
+        <a href="profils.html">Profils</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn-login">Connexion</a>
+        <a href="register-recruteur.html" class="btn-signup">Inscription</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-particles" id="particles-js"></div>
+      <div class="container">
+        <div class="hero-text">
+        <h1>Connectez votre <span class="gradient-text">talent</span> aux <span class="gradient-text">opportunités</span></h1>
+        <p>La plateforme qui met en relation les étudiants en fin de cycle avec les recruteurs à la recherche de nouveaux talents.</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number animate-count" data-count="500">0+</div>
+            <div class="stat-label">Étudiants</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number animate-count" data-count="120">0+</div>
+            <div class="stat-label">Entreprises</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number animate-count" data-count="85">0</div>
+            <div class="stat-label">Taux de placement</div>
+          </div>
+        </div>
+          <div class="cta-buttons">
+          <a href="profils.html" class="cta-button primary">
+            <i class="fas fa-search"></i>
+            Explorer les profils
+          </a>
+          <a href="register-etudiant.html" class="cta-button secondary">
+            <i class="fas fa-user-plus"></i>
+            Créer un profil
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="images/8601718.png" alt="Étudiants et technologie">
+          <div class="floating-card card-1">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="card-text">500+ Profils qualifiés</div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="card-text">120+ Entreprises</div>
+          </div>
+          <div class="floating-card card-3">
+            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="card-text">85% de réussite</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+      <h2>Nos Valeurs</h2>
+        <p>Ce qui nous anime au quotidien pour favoriser l'insertion professionnelle</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Excellence Académique</h3>
+          <p>Formation de qualité pour préparer les professionnels de demain à relever les défis du monde du travail.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-bullseye"></i>
+          <h3>Objectifs Ciblés</h3>
+          <p>Objectifs professionnels précis pour chaque étudiant, adaptés aux besoins réels du marché du travail.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-handshake"></i>
+          <h3>Partenariats Stratégiques</h3>
+          <p>Collaboration avec les entreprises pour faciliter l'accès à l'emploi et créer des opportunités concrètes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 style="color: rgb(0, 0, 91);">Comment ça marche</h2>
+        <p>Un processus simple et efficace pour connecter les talents aux opportunités</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Inscription</h3>
+            <p>Les étudiants en fin de cycle et les recruteurs créent leur profil sur la plateforme en quelques minutes.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Création du profil</h3>
+            <p>Les étudiants complètent leur profil avec leurs formations, compétences, expériences et projets réalisés.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Exploration</h3>
+            <p>Les recruteurs parcourent les profils d'étudiants et peuvent filtrer selon leurs critères spécifiques.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Prise de contact</h3>
+            <p>Les entreprises contactent directement les candidats qui correspondent à leurs besoins.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section class="user-types">
+    <div class="stats-floating container">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number" data-count="500">500+</div>
+          <div class="stat-label">Étudiants</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="120">120+</div>
+          <div class="stat-label">Entreprises</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="85">85%</div>
+          <div class="stat-label">Taux de placement</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="15">15+</div>
+          <div class="stat-label">Universités partenaires</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="user-types-grid">
+        <div class="user-type-card students">
+          <div class="user-type-content">
+            <h2>Pour les étudiants</h2>
+            <p>Mettez en valeur vos compétences et trouvez votre premier emploi grâce à une visibilité accrue auprès des recruteurs.</p>
+            <ul class="user-benefits">
+              <li><i class="fas fa-check"></i> Créez un profil professionnel attractif</li>
+              <li><i class="fas fa-check"></i> Partagez vos projets et réalisations</li>
+              <li><i class="fas fa-check"></i> Recevez des propositions d'emploi ciblées</li>
+              <li><i class="fas fa-check"></i> Bénéficiez de conseils pour optimiser votre CV</li>
+            </ul>
+            <a href="register-etudiant.html" class="btn-primary">Je suis étudiant <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="user-type-image">
+            <img src="https://source.unsplash.com/random/500x600/?student" alt="Étudiants">
+          </div>
+        </div>
+        
+        <div class="user-type-card recruiters">
+          <div class="user-type-image">
+            <img src="https://source.unsplash.com/random/500x600/?recruiter" alt="Recruteurs">
+          </div>
+          <div class="user-type-content">
+            <h2>Pour les recruteurs</h2>
+            <p>Accédez à un vivier de talents qualifiés en fin de cycle universitaire et trouvez vos futurs collaborateurs.</p>
+            <ul class="user-benefits">
+              <li><i class="fas fa-check"></i> Recherche avancée de profils par compétences</li>
+              <li><i class="fas fa-check"></i> Contact direct avec les candidats</li>
+              <li><i class="fas fa-check"></i> Alertes personnalisées sur les nouveaux profils</li>
+              <li><i class="fas fa-check"></i> Système de favoris pour suivre les candidats</li>
+            </ul>
+            <a href="register-recruteur.html" class="btn-primary">Je suis recruteur <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ce qu'ils disent de nous</h2>
+        <p>Découvrez les témoignages de nos utilisateurs et leur expérience avec SystemXëy</p>
+      </div>
+      <div class="testimonial-container">
+        <div class="testimonial-carousel">
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>Grâce à SystemXëy, j'ai trouvé mon premier emploi en tant que développeur web junior dans une entreprise innovante. La plateforme m'a permis de mettre en avant mes compétences et projets plus efficacement qu'un simple CV.</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://source.unsplash.com/random/150x150/?portrait,man" alt="Marc Dubois" class="testimonial-author-img">
+                <div class="testimonial-author-info">
+                  <h4>Marc Dubois</h4>
+                  <p>Développeur Web</p>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>En tant que responsable RH, je trouve que SystemXëy offre une approche rafraîchissante pour découvrir des talents. Les filtres de recherche sont précis et le système met en avant les compétences réelles des candidats.</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://source.unsplash.com/random/150x150/?portrait,woman" alt="Sophie Martin" class="testimonial-author-img">
+                <div class="testimonial-author-info">
+                  <h4>Sophie Martin</h4>
+                  <p>Responsable RH</p>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>La plateforme SystemXëy a transformé notre processus de recrutement. Nous avons réduit le temps de recherche des candidats de 40% et amélioré la qualité des entretiens grâce aux profils détaillés et projets présentés.</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://source.unsplash.com/random/150x150/?portrait,businessman" alt="Thomas Laurent" class="testimonial-author-img">
+                <div class="testimonial-author-info">
+                  <h4>Thomas Laurent</h4>
+                  <p>Directeur Technique</p>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-nav">
+          <button class="carousel-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="testimonial-dots">
+            <span class="testimonial-dot active"></span>
+            <span class="testimonial-dot"></span>
+            <span class="testimonial-dot"></span>
+          </div>
+          <button class="carousel-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Prêt à rejoindre l'aventure ?</h2>
+        <p>Que vous soyez étudiant en fin de cycle ou recruteur, créez votre compte gratuitement et commencez dès aujourd'hui !</p>
+        <div class="cta-buttons">
+          <a href="register-etudiant.html" class="btn-primary"><i class="fas fa-user-graduate"></i> Inscription étudiant</a>
+          <a href="register-recruteur.html" class="btn-secondary"><i class="fas fa-building"></i> Inscription recruteur</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>SystemXëy</h3>
+          <p>Plateforme de mise en relation entre étudiants et entreprises pour faciliter l'insertion professionnelle</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="profils.html">Profils</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Légal</h3>
+          <ul>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+          </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de la République, Dakar</li>
+            <li><i class="fas fa-phone"></i> +221 XX XXX XX XX</li>
+            <li><i class="fas fa-envelope"></i> contact@systemxey.com</li>
+          </ul>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Votre email">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SystemXëy - Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Menu mobile toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('active');
+          
+          // Change icon
+          const icon = this.querySelector('i');
+          if (icon.classList.contains('fa-bars')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+          } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+          }
+        });
+      }
+      
+      // Initialiser les particules
+      if (document.getElementById('particles-js')) {
+        particlesJS('particles-js', {
+          "particles": {
+            "number": {
+              "value": 80,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 2,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "grab"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 140,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        });
+      }
+      
+      // Témoignages carousel
+      const carousel = document.querySelector('.testimonial-carousel');
+      const slides = document.querySelectorAll('.testimonial-slide');
+      const prevBtn = document.querySelector('.prev-btn');
+      const nextBtn = document.querySelector('.next-btn');
+      const dots = document.querySelectorAll('.testimonial-dot');
+      
+      let currentSlide = 0;
+      const slidesCount = slides.length;
+      
+      // Configurer le carousel
+      function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        
+        // Mettre à jour les dots
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentSlide);
+        });
+      }
+      
+      // Navigation des slides
+      nextBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slidesCount;
+        updateCarousel();
+      });
+      
+      prevBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slidesCount) % slidesCount;
+        updateCarousel();
+      });
+      
+      // Navigation avec les dots
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          updateCarousel();
+        });
+      });
+      
+      // Auto rotation
+      let carouselInterval = setInterval(() => {
+        currentSlide = (currentSlide + 1) % slidesCount;
+        updateCarousel();
+      }, 5000);
+      
+      // Pause au survol
+      carousel.addEventListener('mouseenter', () => {
+        clearInterval(carouselInterval);
+      });
+      
+      carousel.addEventListener('mouseleave', () => {
+        carouselInterval = setInterval(() => {
+          currentSlide = (currentSlide + 1) % slidesCount;
+          updateCarousel();
+        }, 5000);
+      });
+      
+      // Scroll reveal animation
+      const revealElements = document.querySelectorAll('.feature-card, .process-step, .testimonial-card');
+      
+      function checkScroll() {
+        revealElements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const triggerPoint = window.innerHeight * 0.8;
+          
+          if (elementTop < triggerPoint) {
+            element.classList.add('visible');
+          }
+        });
+      }
+      
+      // Initial check
+      checkScroll();
+      
+      // Check on scroll
+      window.addEventListener('scroll', checkScroll);
+      
+      // Counter animation for hero stats
+      const animateHeroCounter = () => {
+        const heroStatNumbers = document.querySelectorAll('.hero-stats .animate-count');
+        
+        heroStatNumbers.forEach(number => {
+          const targetNumber = parseInt(number.getAttribute('data-count'));
+          const duration = 2000; // ms
+          const increment = targetNumber / (duration / 16); // 60fps
+          let current = 0;
+          
+          const counterAnimation = setInterval(() => {
+            current += increment;
+            
+            if (current >= targetNumber) {
+              if (targetNumber === 85) {
+                number.textContent = targetNumber + "%";
+              } else {
+                number.textContent = targetNumber + "+";
+              }
+              clearInterval(counterAnimation);
+            } else {
+              if (targetNumber === 85) {
+                number.textContent = Math.floor(current) + "%";
+              } else {
+                number.textContent = Math.floor(current) + "+";
+              }
+            }
+          }, 16);
+        });
+      };
+      
+      // Start hero counters immediately
+      setTimeout(animateHeroCounter, 500);
+      
+      // Counter animation for stats container
+      const statNumbers = document.querySelectorAll('.stats-container .stat-number');
+      
+      function animateCounter() {
+        statNumbers.forEach(number => {
+          const targetNumber = parseInt(number.getAttribute('data-count'));
+          const duration = 2000; // ms
+          const increment = targetNumber / (duration / 16); // 60fps
+          let current = 0;
+          
+          const counterAnimation = setInterval(() => {
+            current += increment;
+            
+            if (current >= targetNumber) {
+              number.textContent = targetNumber + "+";
+              clearInterval(counterAnimation);
+            } else {
+              number.textContent = Math.floor(current) + "+";
+            }
+          }, 16);
+        });
+      }
+      
+      // Intersection Observer for stat counter
+      if ('IntersectionObserver' in window) {
+        const statsContainer = document.querySelector('.stats-container');
+        if (statsContainer) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                animateCounter();
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.5 });
+          
+          observer.observe(statsContainer);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
